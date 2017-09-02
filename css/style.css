@@ -1,0 +1,74 @@
+.shopping-basket-table > .body {
+  border: 1px solid #c4c4c4;
+}
+
+.shopping-basket-table > .container.body > .row {
+  padding: 40px;
+}
+
+.shopping-basket-table > .body > .row:not(:first-child) {
+  border-top: 1px solid #c4c4c4;
+}
+
+
+.shopping-basket-table > .container.header > .row {
+  padding: 0 40px;
+  color: #909090;
+  font-weight:normal !important;
+}
+
+.shopping-basket-table .product-title, .product-description {
+  color: #3260b5;
+  font-weight:bold;
+}
+
+.shopping-basket-table .product-price {
+  color: #942222;
+  font-weight:bold;
+}
+
+.shopping-basket-table .product-category {
+  color: #909090;
+}
+
+.shopping-basket-table .product-remove {
+  color: #3260b5;
+}
+
+.shopping-basket-table .product-quantity input {
+  width: 4em;
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-size: 2.45rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
