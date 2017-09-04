@@ -1,16 +1,12 @@
 <?php
-/**
- * Created by Said-Magomed Sadulaev.
- * User: said2890
- * Date: 28/08/2017
- * Time: 16:53
- */
 
-class Config {
-    public static $HOST = "localhost";
-    public static $USER = "username";
-    public static $PASSWORD = "password";
-    public static $DB = "database";
-}
+define("HOST", "localhost");     // The host you want to connect to.
+define("USER", "said2890");    // The database username. 
+define("PASSWORD", "said2890");    // The database password. 
+define("DATABASE", "internet_shop");    // The database name.
 
+define("CAN_REGISTER", "any");
+define("DEFAULT_ROLE" "member");
+
+define("SECURE", FALSE);
 ?>

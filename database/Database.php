@@ -13,7 +13,7 @@ class Database
 
     public function __construct(){
         // Create connection
-        $conn = new mysqli(Config::HOST, Config::USER, Config::PASSWORD);
+        $conn = new mysqli(HOST, USER, PASSWORD);
         // Check connection
         if($conn->connect_error){
             die("Connection failed: " . $conn->connect_error);
