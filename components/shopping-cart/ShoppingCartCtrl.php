@@ -3,7 +3,7 @@
 session_start();
 
 require_once __DIR__ . '/ShoppingCartModel.php';
-require_once __DIR__ .'/../products/ProductsCtrl.php';
+require_once __DIR__ .'/../product/ProductsCtrl.php';
 
     class ShoppingCartCtrl {
         private $basket;
@@ -40,7 +40,7 @@ require_once __DIR__ .'/../products/ProductsCtrl.php';
 
         public function getProducts() {
             $productsCtrl = new ProductsCtrl;
-            return $productsCtrl->getProducts($this->getProductsIds());
+            return $productsCtrl->getProducts($this->getProductIds());
         }
 
         public function renderView() {

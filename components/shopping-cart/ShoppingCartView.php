@@ -1,8 +1,8 @@
 <?php
 
-include_once __DIR__.'shopping-cart/ShoppingCartCtrl.php';
+include_once __DIR__.'/ShoppingCartCtrl.php';
 
-$basketCtrl = new ShoppingCartCrl;
+$basketCtrl = new ShoppingCartCtrl;
 $productsInBasket = $basketCtrl->getProducts()
 ?>
 

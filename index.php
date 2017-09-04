@@ -1,5 +1,8 @@
 <?php
     session_start();
+    /* Display errors and warnings */
+    ini_set( 'error_reporting', E_ALL );
+    ini_set( 'display_errors', true );
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +21,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <? include __DIR__.'shoping-cart/ShoppingCartView.php'; ?>
+        <?php include __DIR__.'/components/shopping-cart/ShoppingCartView.php'; ?>
     </body>
 </html>
