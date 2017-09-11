@@ -1,2 +1,10 @@
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,NC,L]
+
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
